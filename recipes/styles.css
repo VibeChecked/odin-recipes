@@ -1,3 +1,25 @@
 *{
-    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-bottom: 15px;
 }
+
+div.class{
+    margin-top: 30px;
+}
+
+
+/* img{
+    padding-left: 400px;
+    padding-bottom: 50px;
+    
+}
+
+h1{
+    padding-left: 500px;
+} */
+
+/* ol{
+    padding-left: 500px;
+    text-align: left;
+} */
