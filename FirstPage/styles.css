@@ -1,10 +1,12 @@
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
 .head{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 
     background-color: rgb(33, 42, 59);
@@ -12,13 +14,16 @@ body{
     height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
 }
 
 .header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    height: 10px;
+    flex: 1 1 auto;
 
 }
 
@@ -34,31 +39,36 @@ ul{
 }
 
 .head-content{
-    flex: 1 1 80%;
-
     display: flex;
     justify-content: space-around;
-    align-items: center;
-
+    /* margin-top: 70px;
+    margin-bottom:100px; */
+    padding: 200px;
+    padding-top: 150px;
+    
     gap: 100px;
-    padding: 120px;
+    flex: 1 1 auto;
 
     
 }
 
 .text{
-    flex:1 1 40%;
+    flex:1 1 auto;
     height: 100%;
-    
+    width: 70px;
+    padding-left: 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
 
 }
 .title{
+    display:flex ;
+    flex-wrap: wrap;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
     
 }
 .subtext{
@@ -69,15 +79,15 @@ ul{
 .img{
     background-color: rgb(103, 103, 120);
     color: white;
-    flex: 1 1 40%;
-    height: 100%;
+    flex: 1 0 0;
+    
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.head-button{
+button{
     background-color: rgb(19, 130, 240);
     color: white;
     font-weight: bold;
@@ -87,7 +97,93 @@ ul{
 
     font-size: 15px;
 
-    width: 100px;
-    height: 30px;
+    width: 130px;
+    height: 35px;
     margin-top: 15px;
+}
+
+
+
+.infohead{
+    margin-top: 50px;
+    flex: 1 1 auto;
+    font-size: 30px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.pics{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.pic-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic-frame{
+    height: 150px;
+    width: 150px; 
+    border-style: solid;
+    border-color: rgb(19, 130, 240);;
+    border-radius: 10px;
+    
+}
+
+.pic-subtext{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    padding-top: 10px;
+}
+
+.gray-stuff{
+    margin-top: 100px;
+    background-color: lightgray;
+    height: 440px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
+
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+
+.footer-box{
+    height: 40%;
+    width: 70%;
+    background-color: rgb(19, 130, 240);;
+    border-radius: 10px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+
+.footer-box-subtext{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight:400;
+}
+
+.footer-box-button{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white
 }
